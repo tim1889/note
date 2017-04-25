@@ -1,4 +1,92 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="author" content="Tim"><meta name="description" conauthortent="前端开发笔记"><link rel="alternative" href="/atom.xml" title="Tim's blog" type="application/atom+xml"><link rel="icon" href="/favicon.png"><title>this 的绑定 - Tim's blog</title><link rel="stylesheet" href="/note/css/main.css"><link rel="stylesheet" href="/note/js/fancybox/jquery.fancybox.min.css"><!--[if lt IE 9]><script>(function(a,b){a="abbr article aside audio bdi canvas data datalist details dialog figcaption figure footer header hgroup main mark meter nav output progress section summary template time video".split(" ");for(b=a.length-1;b>=0;b--)document.createElement(a[b])})()</script><![endif]--><script src="/js/jquery-3.1.1.min.js"></script><script src="/js/fancybox/jquery.fancybox.min.js"></script><!-- Hotjar Tracking Code for ochukai.me --></head><body style="opacity:0"><header class="head"><h1 class="head-title u-fl"><a href="/note/">Tim's blog</a></h1><nav class="head-nav u-fr"><ul class="head-nav__list"><li class="head-nav__item"><a href="/archives" class="head-nav__link">目录</a></li></ul></nav></header><main class="main"><article class="post"><header class="post__head">  <time datetime="2017-04-25T05:39:25.000Z" class="post__time">April 25, 2017</time><h1 class="post__title"><a href="/note/2017/04/25/this-的绑定/">this 的绑定</a></h1><div class="post__main echo"><h2 id="this-的默认调用"><a href="#this-的默认调用" class="headerlink" title="this 的默认调用"></a>this 的默认调用</h2><p>this 默认调用于全局</p>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>this 的绑定 | Tim&#39;s blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="this 的默认调用this 默认调用于全局 1234567function fun() &amp;#123;    console.log(this.name);&amp;#125;var name = &amp;apos;Tim&amp;apos;;fun()   // tim this 的隐式绑定决定于最后调用函数的上下文 12345678910111213141516171819202122232425function">
+<meta name="keywords" content="js">
+<meta property="og:type" content="article">
+<meta property="og:title" content="this 的绑定">
+<meta property="og:url" content="https://tim1889.github.io/note/2017/04/25/this-的绑定/index.html">
+<meta property="og:site_name" content="Tim's blog">
+<meta property="og:description" content="this 的默认调用this 默认调用于全局 1234567function fun() &amp;#123;    console.log(this.name);&amp;#125;var name = &amp;apos;Tim&amp;apos;;fun()   // tim this 的隐式绑定决定于最后调用函数的上下文 12345678910111213141516171819202122232425function">
+<meta property="og:updated_time" content="2017-04-25T05:42:20.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="this 的绑定">
+<meta name="twitter:description" content="this 的默认调用this 默认调用于全局 1234567function fun() &amp;#123;    console.log(this.name);&amp;#125;var name = &amp;apos;Tim&amp;apos;;fun()   // tim this 的隐式绑定决定于最后调用函数的上下文 12345678910111213141516171819202122232425function">
+  
+    <link rel="alternate" href="/atom.xml" title="Tim&#39;s blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/note/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/note/" id="logo">Tim&#39;s blog</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/note/">Home</a>
+        
+          <a class="main-nav-link" href="/note/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="Flux RSS"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Rechercher"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://tim1889.github.io/note"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-this-的绑定" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/note/2017/04/25/this-的绑定/" class="article-date">
+  <time datetime="2017-04-25T05:39:25.000Z" itemprop="datePublished">2017-04-25</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      this 的绑定
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="this-的默认调用"><a href="#this-的默认调用" class="headerlink" title="this 的默认调用"></a>this 的默认调用</h2><p>this 默认调用于全局</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">function fun() &#123;</div><div class="line">    console.log(this.name);</div><div class="line">&#125;</div><div class="line"></div><div class="line">var name = &apos;Tim&apos;;</div><div class="line"></div><div class="line">fun()   // tim</div></pre></td></tr></table></figure>
 <h2 id="this-的隐式绑定"><a href="#this-的隐式绑定" class="headerlink" title="this 的隐式绑定"></a>this 的隐式绑定</h2><p>决定于最后调用函数的上下文</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line">function fun() &#123;</div><div class="line">    console.log(this.name)</div><div class="line">&#125;</div><div class="line"></div><div class="line">var obj_1 = &#123;</div><div class="line">    name: &apos;Joey&apos;,</div><div class="line">    fun: fun</div><div class="line">&#125;</div><div class="line">obj_1.fun()  //Joey，最后调用 fun  的是 obj_1</div><div class="line"></div><div class="line">var obj_2 = &#123;</div><div class="line">    name: &apos;Allen&apos;,</div><div class="line">    fun: obj_1.fun</div><div class="line">&#125;</div><div class="line">obj_2.fun()  //Allen，最后调用 fun  的是 obj_2</div><div class="line"></div><div class="line">var obj_3 = &#123;</div><div class="line">    name: &apos;Alice&apos;,</div><div class="line">    fun: obj_1</div><div class="line">&#125;</div><div class="line">obj_3.fun.fun()  //Joey，最后调用 fun  的是 obj_2</div><div class="line"></div><div class="line">var bar = obj_1.fun;</div><div class="line"></div><div class="line">bar()   //undefind，最后调用 fun  的是 global，而 global 中并未定义 name</div></pre></td></tr></table></figure>
@@ -17,4 +105,122 @@
 </ul>
 <h2 id="new-新对象绑定"><a href="#new-新对象绑定" class="headerlink" title="new 新对象绑定"></a>new 新对象绑定</h2><p>this 绑定在 新创建的对象上</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">function Anmail(name) &#123;</div><div class="line">    this.name = name;</div><div class="line">&#125;</div><div class="line"></div><div class="line">var cat = new Animal(&apos;cat&apos;);</div><div class="line"></div><div class="line">console.log(cat.name)  //cat， this 被绑定在了 cat 上</div></pre></td></tr></table></figure>
-</div></header><footer class="post__foot u-cf"><ul class="post__tag u-fl"><li class="post__tag__item"><a href="/note/tags/js/" class="post__tag__link">js</a></li></ul></footer></article><section class="reward"> <a href="#" class="btn-reward">打赏</a><div class="reward-wrapper clearfix"><img src="/img/wechat.png"></div></section></main><footer class="foot"><div class="foot-copy u-fl">&copy; 2016-2017 Tim</div><menu class="page-menu u-fr"><li class="page-menu__item"><a title="Previous" href="/note/2017/04/25/单元测试/" class="page-menu__link icon-arrow-left"></a></li><li class="page-menu__item"><span title="Next" class="page-menu__link icon-arrow-right page-menu__link--disabled"></span></li></menu></footer><script src="/js/scroller.js"></script><script src="/js/main.js"></script></body></html>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://tim1889.github.io/note/2017/04/25/this-的绑定/" data-id="cj1x54piz0000mo7l65u8cwt4" class="article-share-link">Partager</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/note/tags/js/">js</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/note/2017/04/25/单元测试/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Récent</strong>
+      <div class="article-nav-title">
+        
+          单元测试
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Mot-clés</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/note/tags/js/">js</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Nuage de mot-clés</h3>
+    <div class="widget tagcloud">
+      <a href="/note/tags/js/" style="font-size: 10px;">js</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/note/archives/2017/04/">April 2017</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Articles récents</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/note/2017/04/25/this-的绑定/">this 的绑定</a>
+          </li>
+        
+          <li>
+            <a href="/note/2017/04/25/单元测试/">单元测试</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 Tim<br>
+      Propulsé by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/note/" class="mobile-nav-link">Home</a>
+  
+    <a href="/note/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/note/fancybox/jquery.fancybox.css">
+  <script src="/note/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/note/js/script.js"></script>
+
+  </div>
+</body>
+</html>
